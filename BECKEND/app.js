@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5177"],
+  origin: [
+    "https://fitness-gym-zone.netlify.app"],
   methods: ["GET","POST"],
   credentials: true,
 }));
